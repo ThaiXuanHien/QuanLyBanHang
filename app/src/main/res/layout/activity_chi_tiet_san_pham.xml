@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ChiTietSanPhamActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarChiTietSP"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#673AB7"
+        app:title="Chi Tiết Sản Phẩm"
+        app:titleTextColor="#FFFFFF">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:id="@+id/imageviewChiTietSP"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textviewTenChiTietSP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="#0D3CE6"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textviewGiaChiTietSP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#EA5487"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <Spinner
+
+                android:background="@drawable/custom_spinner"
+                android:layout_margin="3dp"
+                android:id="@+id/spinnerSoLuong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center">
+
+            </Spinner>
+            <Button
+                android:layout_margin="5dp"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:background="@drawable/custom_button"
+                android:text="Thêm vào giỏ hàng"
+                android:drawableLeft="@drawable/icon_cart"
+                android:id="@+id/buttonThemGioHang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Mô tả chi tiết sản phẩm"
+            android:layout_margin="5dp"
+            android:textSize="30sp"
+            android:textColor="#0A3D65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:paddingBottom="10dp"
+                android:textSize="20sp"
+                android:id="@+id/textviewMotaChiTietSP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="3">
+
+        <ImageView
+            android:id="@+id/imageviewItemGioHang"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true">
+
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textviewTenSPGioHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF5722"
+            android:textSize="25sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textviewGiaSPGioHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="#2A3C9F"
+            android:textSize="25sp">
+
+        </TextView>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:focusable="false"
+                android:id="@+id/buttonMinus"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:text="-"
+                android:textColor="#fff"
+                android:textSize="30sp">
+
+            </Button>
+            <Button
+                android:focusable="false"
+                android:id="@+id/buttonValue"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="1"
+
+                android:textSize="30sp">
+
+            </Button>
+            <Button
+                android:focusable="false"
+                android:id="@+id/buttonPlus"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:text="+"
+                android:textColor="#fff"
+                android:textSize="30sp">
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
